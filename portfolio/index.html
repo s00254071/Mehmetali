@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mehmet Ali Buk | Software Developer</title>
+  <meta name="description" content="Portfolio of Mehmet Ali Buk, Software Development student at ATU Sligo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo">mehmet<span>.</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== INTRO ===== -->
+    <section class="hero container">
+      <p class="hello">Hi, I'm</p>
+      <h1>Mehmet Ali Buk</h1>
+      <p class="tagline">
+        Software Development student at ATU Sligo. I build web apps, mobile apps
+        and cloud stuff, mostly with C#, Angular and AWS.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">See my projects</a>
+        <a href="cv.pdf" class="btn btn-outline" download>Download CV</a>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section container">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>
+          I'm in third year of Software Development at ATU Sligo, with one year left.
+          So far I've worked on everything from C# programs and REST APIs to Angular
+          front ends and small projects on AWS.
+        </p>
+        <p>
+          Outside college I work in the events team at the Radisson Blu Hotel in Sligo,
+          mostly on weddings. It's taught me how to work under pressure and with a team,
+          which helps a lot on group projects too.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS =====
+         HOW TO ADD A PROJECT:
+         1. Copy one <article class="project"> ... </article> block below
+         2. Paste it inside <div class="project-grid">
+         3. Change the title, text, tags and links
+         4. For a screenshot: put the image in the images/ folder and swap
+            <div class="project-img placeholder">...</div> for
+            <img class="project-img" src="images/your-image.png" alt="short description">
+         5. Status badge: use "done", "wip" (in progress) or "soon" (coming soon)
+    -->
+    <section id="projects" class="section container">
+      <h2>Projects</h2>
+      <p class="section-intro">Some of the things I've built or I'm working on right now.</p>
+
+      <div class="project-grid">
+
+        <!-- PROJECT 1 -->
+        <article class="project">
+          <div class="project-img placeholder">Sold!</div>
+          <div class="project-body">
+            <span class="status wip">In progress</span>
+            <h3>Sold! - Marketplace App</h3>
+            <p>
+              Android app for buying and selling anything, kind of a mix of Vinted and
+              Facebook Marketplace. It has an AI chat assistant that helps you find items.
+              Group project for Project 300.
+            </p>
+            <ul class="tags">
+              <li>Android</li>
+              <li>REST API</li>
+              <li>MongoDB</li>
+              <li>AI</li>
+            </ul>
+            <div class="project-links">
+              <!-- put your GitHub link in href and remove class="disabled" -->
+              <a href="#" class="disabled">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project">
+          <div class="project-img placeholder">Car Listings</div>
+          <div class="project-body">
+            <span class="status done">Done</span>
+            <h3>Car Listing Website</h3>
+            <p>
+              A website for listing and browsing cars for sale, like Facebook Marketplace
+              but just for cars. Built with an API and a MongoDB database behind it.
+            </p>
+            <ul class="tags">
+              <li>API</li>
+              <li>MongoDB</li>
+              <li>JSON</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="disabled">GitHub</a>
+              <a href="#" class="disabled">Live demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 (empty slot, fill in later) -->
+        <article class="project">
+          <div class="project-img placeholder">Coming soon</div>
+          <div class="project-body">
+            <span class="status soon">Coming soon</span>
+            <h3>Project name</h3>
+            <p>
+              Short description of what it does and what you used to build it.
+              One or two lines is enough.
+            </p>
+            <ul class="tags">
+              <li>C#</li>
+              <li>Angular</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="disabled">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h3>Languages</h3>
+          <ul class="tags">
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Frameworks</h3>
+          <ul class="tags">
+            <li>Angular</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Databases</h3>
+          <ul class="tags">
+            <li>MySQL</li>
+            <li>DynamoDB</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="skill-box">
+          <h3>Cloud &amp; Tools</h3>
+          <ul class="tags">
+            <li>AWS</li>
+            <li>REST APIs</li>
+            <li>JSON</li>
+            <li>Git / GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== EXPERIENCE & EDUCATION ===== -->
+    <section class="section container">
+      <h2>Experience &amp; Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="date">2024 - 2028</span>
+          <h3>BSc Software Development</h3>
+          <p class="where">ATU Sligo</p>
+          <p>Cloud Computing, Web Development, Web Programming, Client-Side Scripting, Software Quality Testing, Programming 1-4.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="date">Mar 2026 - Now</span>
+          <h3>Events Team (Weddings &amp; Functions)</h3>
+          <p class="where">Radisson Blu Hotel, Sligo</p>
+          <p>Setting up and running weddings and events, working with customers and a busy team.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section container contact">
+      <h2>Get in touch</h2>
+      <p>Looking for part-time work or placement opportunities. Feel free to send me an email.</p>
+      <a href="mailto:bukmehmetali6615@icloud.com" class="btn">bukmehmetali6615@icloud.com</a>
+      <div class="socials">
+        <!-- add your links here once they're set up -->
+        <a href="#" class="disabled">GitHub</a>
+        <a href="#" class="disabled">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container footer">
+    <p>&copy; 2026 Mehmet Ali Buk</p>
+  </footer>
+
+</body>
+</html>
