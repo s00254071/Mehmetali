@@ -4,221 +4,238 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mehmet Ali Buk | Software Developer</title>
-  <meta name="description" content="Portfolio of Mehmet Ali Buk, Software Development student at ATU Sligo.">
+  <meta name="description" content="Mehmet Ali Buk, Software Development student at ATU Sligo. Projects, experience and contact details.">
+  <meta name="theme-color" content="#0a0f1a">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== NAV ===== -->
   <header class="nav">
     <div class="container nav-inner">
-      <a href="#top" class="logo">mehmet<span>.</span></a>
-      <nav>
-        <a href="#about">About</a>
+      <a href="#top" class="logo">Mehmet<span>.</span></a>
+      <nav class="nav-links">
         <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
+      <a href="cv.pdf" class="btn btn-small" download>CV</a>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- ===== INTRO ===== -->
     <section class="hero container">
-      <p class="hello">Hi, I'm</p>
+      <p class="hero-kicker">Software Development student, ATU Sligo</p>
       <h1>Mehmet Ali Buk</h1>
-      <p class="tagline">
-        Software Development student at ATU Sligo. I build web apps, mobile apps
-        and cloud stuff, mostly with C#, Angular and AWS.
+      <p class="hero-text">
+        I'm in my third year and I build web apps with Angular, Node.js and C#,
+        backed by REST APIs and databases like MongoDB and MySQL.
       </p>
       <div class="hero-buttons">
         <a href="#projects" class="btn">See my projects</a>
         <a href="cv.pdf" class="btn btn-outline" download>Download CV</a>
       </div>
+      <p class="status"><span class="dot"></span>Open to part-time work alongside college</p>
     </section>
 
-    <!-- ===== ABOUT ===== -->
+    <section id="projects" class="section container">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <a href="https://github.com/s00254071" target="_blank" rel="noopener" class="text-link">All projects on GitHub</a>
+      </div>
+
+      <article class="project reveal">
+        <a href="https://s00254071.github.io/GitSearch/" target="_blank" rel="noopener" class="project-media">
+          <img src="images/gitsearch.jpg" alt="GitSearch home page showing search results">
+        </a>
+        <div class="project-body">
+          <p class="project-meta">Personal project <span class="badge live">Live</span></p>
+          <h3>GitSearch</h3>
+          <p>
+            Basically Google, but for GitHub. You type in anything and it pulls matching
+            repositories from the GitHub API, showing stars, forks and language, with
+            pages to move through the results. You can also save repos to a favourites list.
+          </p>
+          <ul class="tags">
+            <li>Angular</li>
+            <li>TypeScript</li>
+            <li>GitHub API</li>
+            <li>MongoDB</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://s00254071.github.io/GitSearch/" target="_blank" rel="noopener" class="btn btn-small">Visit site</a>
+            <a href="https://github.com/s00254071/GitSearch" target="_blank" rel="noopener" class="text-link">View code</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project project-flip reveal">
+        <div class="project-media video-box">
+          <video controls preload="metadata" playsinline poster="images/car-demo-poster.jpg">
+            <source src="videos/car-demo.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="project-body">
+          <p class="project-meta">Group project <span class="badge done">Completed</span></p>
+          <h3>Sligo Car Sales</h3>
+          <p>
+            A local marketplace for buying and selling cars. You can list a car with a price,
+            photo and description, browse the latest listings, and open a page for each car.
+            Every listing is stored in a MongoDB database through our API.
+          </p>
+          <p class="note">
+            The site was hosted on AWS, which costs money to keep running, so it's offline
+            for now. The demo video shows the full site working.
+          </p>
+          <ul class="tags">
+            <li>JavaScript</li>
+            <li>REST API</li>
+            <li>MongoDB</li>
+            <li>AWS S3</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project reveal">
+        <div class="project-media project-soon">
+          <span>Module Feedback</span>
+          <small>In development</small>
+        </div>
+        <div class="project-body">
+          <p class="project-meta">Project 300, final year group project <span class="badge wip">In progress</span></p>
+          <h3>Module Feedback System</h3>
+          <p>
+            A system for ATU where students can review their modules and lecturers can
+            read the feedback, so modules keep getting better each year. We're starting
+            work on it this semester.
+          </p>
+        </div>
+      </article>
+    </section>
+
     <section id="about" class="section container">
       <h2>About me</h2>
-      <div class="about-grid">
+      <div class="about-grid reveal">
         <p>
-          I'm in third year of Software Development at ATU Sligo, with one year left.
-          So far I've worked on everything from C# programs and REST APIs to Angular
-          front ends and small projects on AWS.
+          I'm studying Software Development at ATU Sligo and have one year left after this one.
+          Through college I've worked on C# programs, REST APIs, Angular front ends and
+          projects hosted on AWS. Most of what I know comes from building things and
+          figuring out why they break.
         </p>
         <p>
           Outside college I work in the events team at the Radisson Blu Hotel in Sligo,
-          mostly on weddings. It's taught me how to work under pressure and with a team,
-          which helps a lot on group projects too.
+          mostly on weddings. It's busy, there are tight timings and you have to work as a
+          team, which has helped a lot with group projects too.
         </p>
       </div>
-    </section>
 
-    <!-- ===== PROJECTS =====
-         HOW TO ADD A PROJECT:
-         1. Copy one <article class="project"> ... </article> block below
-         2. Paste it inside <div class="project-grid">
-         3. Change the title, text, tags and links
-         4. For a screenshot: put the image in the images/ folder and swap
-            <div class="project-img placeholder">...</div> for
-            <img class="project-img" src="images/your-image.png" alt="short description">
-         5. Status badge: use "done", "wip" (in progress) or "soon" (coming soon)
-    -->
-    <section id="projects" class="section container">
-      <h2>Projects</h2>
-      <p class="section-intro">Some of the things I've built or I'm working on right now.</p>
-
-      <div class="project-grid">
-
-        <!-- PROJECT 1 -->
-        <article class="project">
-          <div class="project-img placeholder">Sold!</div>
-          <div class="project-body">
-            <span class="status wip">In progress</span>
-            <h3>Sold! - Marketplace App</h3>
-            <p>
-              Android app for buying and selling anything, kind of a mix of Vinted and
-              Facebook Marketplace. It has an AI chat assistant that helps you find items.
-              Group project for Project 300.
-            </p>
-            <ul class="tags">
-              <li>Android</li>
-              <li>REST API</li>
-              <li>MongoDB</li>
-              <li>AI</li>
-            </ul>
-            <div class="project-links">
-              <!-- put your GitHub link in href and remove class="disabled" -->
-              <a href="#" class="disabled">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 2 -->
-        <article class="project">
-          <div class="project-img placeholder">Car Listings</div>
-          <div class="project-body">
-            <span class="status done">Done</span>
-            <h3>Car Listing Website</h3>
-            <p>
-              A website for listing and browsing cars for sale, like Facebook Marketplace
-              but just for cars. Built with an API and a MongoDB database behind it.
-            </p>
-            <ul class="tags">
-              <li>API</li>
-              <li>MongoDB</li>
-              <li>JSON</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" class="disabled">GitHub</a>
-              <a href="#" class="disabled">Live demo</a>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 3 (empty slot, fill in later) -->
-        <article class="project">
-          <div class="project-img placeholder">Coming soon</div>
-          <div class="project-body">
-            <span class="status soon">Coming soon</span>
-            <h3>Project name</h3>
-            <p>
-              Short description of what it does and what you used to build it.
-              One or two lines is enough.
-            </p>
-            <ul class="tags">
-              <li>C#</li>
-              <li>Angular</li>
-            </ul>
-            <div class="project-links">
-              <a href="#" class="disabled">GitHub</a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ===== SKILLS ===== -->
-    <section id="skills" class="section container">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-box">
+      <div class="skills reveal">
+        <div class="skill-group">
           <h3>Languages</h3>
           <ul class="tags">
             <li>C#</li>
             <li>JavaScript</li>
+            <li>TypeScript</li>
             <li>HTML</li>
             <li>CSS</li>
           </ul>
         </div>
-        <div class="skill-box">
+        <div class="skill-group">
           <h3>Frameworks</h3>
           <ul class="tags">
             <li>Angular</li>
+            <li>Node.js</li>
+            <li>Express</li>
             <li>Bootstrap</li>
           </ul>
         </div>
-        <div class="skill-box">
+        <div class="skill-group">
           <h3>Databases</h3>
           <ul class="tags">
+            <li>MongoDB</li>
             <li>MySQL</li>
             <li>DynamoDB</li>
-            <li>MongoDB</li>
           </ul>
         </div>
-        <div class="skill-box">
-          <h3>Cloud &amp; Tools</h3>
+        <div class="skill-group">
+          <h3>Tools</h3>
           <ul class="tags">
             <li>AWS</li>
             <li>REST APIs</li>
             <li>JSON</li>
-            <li>Git / GitHub</li>
+            <li>Git &amp; GitHub</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- ===== EXPERIENCE & EDUCATION ===== -->
-    <section class="section container">
+    <section id="experience" class="section container">
       <h2>Experience &amp; Education</h2>
       <div class="timeline">
-        <div class="timeline-item">
-          <span class="date">2024 - 2028</span>
-          <h3>BSc Software Development</h3>
+        <div class="timeline-item reveal">
+          <span class="date">2024 to 2028</span>
+          <h3>BSc (Hons) Software Development</h3>
           <p class="where">ATU Sligo</p>
-          <p>Cloud Computing, Web Development, Web Programming, Client-Side Scripting, Software Quality Testing, Programming 1-4.</p>
+          <p>
+            Modules this year: Rich Application Development, Mobile Application Development,
+            Web Programming 2, Software Project Management and Professional Development.
+          </p>
         </div>
-        <div class="timeline-item">
-          <span class="date">Mar 2026 - Now</span>
-          <h3>Events Team (Weddings &amp; Functions)</h3>
+        <div class="timeline-item reveal">
+          <span class="date">March 2026 to now</span>
+          <h3>Events Team, Weddings &amp; Functions</h3>
           <p class="where">Radisson Blu Hotel, Sligo</p>
-          <p>Setting up and running weddings and events, working with customers and a busy team.</p>
+          <p>Setting up and running weddings and events, working with guests and a busy team.</p>
+        </div>
+      </div>
+
+      <div class="extras reveal">
+        <div>
+          <h3>Certificates</h3>
+          <p>Full driving licence (Category B), Safe Pass, Manual Handling</p>
+        </div>
+        <div>
+          <h3>Languages</h3>
+          <p>English and Turkish</p>
         </div>
       </div>
     </section>
 
-    <!-- ===== CONTACT ===== -->
-    <section id="contact" class="section container contact">
+    <section id="contact" class="section container contact reveal">
       <h2>Get in touch</h2>
-      <p>Looking for part-time work or placement opportunities. Feel free to send me an email.</p>
+      <p>I'm looking for part-time or placement work I can do around college. Feel free to email me.</p>
       <a href="mailto:bukmehmetali6615@icloud.com" class="btn">bukmehmetali6615@icloud.com</a>
       <div class="socials">
-        <!-- add your links here once they're set up -->
-        <a href="#" class="disabled">GitHub</a>
-        <a href="#" class="disabled">LinkedIn</a>
+        <a href="https://github.com/s00254071" target="_blank" rel="noopener">GitHub</a>
+        <a href="cv.pdf" download>Download CV</a>
       </div>
     </section>
 
   </main>
 
-  <footer class="container footer">
+  <footer class="footer container">
     <p>&copy; 2026 Mehmet Ali Buk</p>
   </footer>
+
+  <script>
+    const items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      document.body.classList.add('js');
+      const watcher = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            watcher.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      items.forEach((item) => watcher.observe(item));
+    }
+  </script>
 
 </body>
 </html>
